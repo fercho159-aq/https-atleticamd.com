@@ -26,8 +26,8 @@
   --shadow-lg: 0 20px 50px rgba(20, 40, 70, .14);
   --t: .35s cubic-bezier(.4, 0, .2, 1);
 
-  --font:         'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-heading: 'Oswald', system-ui, -apple-system, sans-serif;
+  --font:         'Open Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
 }
 
 /* ---------- Reset ---------- */
