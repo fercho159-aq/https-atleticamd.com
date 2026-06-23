@@ -187,14 +187,28 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; letter-spacing: .02em; fon
   position: relative;
   min-width: 100%;
   min-height: 78vh;
-  display: grid;
   align-items: center;
-  background-image: linear-gradient(95deg, rgba(10,18,30,.78) 0%, rgba(10,18,30,.46) 55%, rgba(10,18,30,.12) 100%), var(--img);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   display: none;
 }
 .slide.is-active { display: grid; animation: fade .8s ease; }
+.slide__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+.slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(95deg, rgba(10,18,30,.78) 0%, rgba(10,18,30,.46) 55%, rgba(10,18,30,.12) 100%);
+  z-index: 1;
+}
+.slide__inner { position: relative; z-index: 2; }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 
 .slide__inner { padding-block: 60px; max-width: 640px; }
