@@ -169,7 +169,7 @@
         'WhatsApp: ' + wa +
         (email   ? '\nCorreo: '  + email   : '') +
         (howhelp ? '\n' + howhelp : '');
-      window.open('https://wa.me/525589318110?text=' + encodeURIComponent(text), '_blank');
+      window.open('https://wa.me/525528505387?text=' + encodeURIComponent(text), '_blank');
     });
   }
 
